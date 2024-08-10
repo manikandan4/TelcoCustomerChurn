@@ -88,6 +88,33 @@ def main():
         .spacer {
             height: 20px;
         }
+         .team-info {
+            font-size: 16px;
+            color: #667BC6;
+            margin-top: 40px;
+            text-align: center;
+        }
+        .footer {
+            background-color: #667BC6;
+            padding: 20px;
+            color: white;
+
+            margin-top: 40px;
+        }
+        .team-member {
+            margin-top: 20px;
+        }
+        .team-member img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        .team-member span {
+            font-size: 18px;
+            vertical-align: middle;
+        }
         </style>
         """,
         unsafe_allow_html=True
@@ -138,5 +165,29 @@ def main():
         except Exception as e:
             st.error(f"An error occurred: {e}")
 
+ # Team Information
+    st.markdown('<div class="divider"></div>', unsafe_allow_html=True)
+    st.markdown(
+        """
+        <div class="footer">
+            <div class="team-member">
+                Group 11 - Team member info
+            </div>
+            <div class="team-member">
+                <img src="https://via.placeholder.com/50" alt="Manikandan Sadhasivam">
+                <span>Manikandan Sadhasivam</span>
+            </div>
+            <div class="team-member">
+                <img src="https://via.placeholder.com/50" alt="Anand Geetha">
+                <span>Anand Geetha</span>
+            </div>
+            <div class="team-member">
+                <img src="https://via.placeholder.com/50" alt="Angappan Sathyabama">
+                <span>Angappan Sathyabama</span>
+            </div>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
 if __name__ == '__main__':
     main()
